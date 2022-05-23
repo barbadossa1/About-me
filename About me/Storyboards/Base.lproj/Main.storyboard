@@ -18,7 +18,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="34" translatesAutoresizingMaskIntoConstraints="NO" id="rNM-9j-DRH">
                                 <rect key="frame" x="20" y="174.5" width="280" height="219"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O2K-x9-EAE">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="unlessEditing" translatesAutoresizingMaskIntoConstraints="NO" id="O2K-x9-EAE">
                                         <rect key="frame" x="0.0" y="0.0" width="280" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="EvM-Ca-qSb"/>
@@ -26,7 +26,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES" textContentType="username"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r09-ho-yOK">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="unlessEditing" translatesAutoresizingMaskIntoConstraints="NO" id="r09-ho-yOK">
                                         <rect key="frame" x="0.0" y="84" width="280" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="ebl-Pe-DTq"/>
@@ -47,8 +47,11 @@
                                                     </attributes>
                                                 </fragment>
                                             </attributedString>
-                                            <color key="baseBackgroundColor" systemColor="systemPinkColor"/>
+                                            <color key="baseBackgroundColor" red="0.52715533969999995" green="0.67969137430000004" blue="0.8970826864" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="Ywv-DW-PS4" kind="modal" modalPresentationStyle="fullScreen" id="6jn-9y-8s2"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -59,21 +62,21 @@
                                         <rect key="frame" x="0.0" y="0.0" width="145" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Forgot username?">
-                                            <color key="baseForegroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="baseForegroundColor" red="0.44584000109999999" green="0.57524520160000003" blue="0.75533241029999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </buttonConfiguration>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vd8-44-qJd">
                                         <rect key="frame" x="145" y="0.0" width="143" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Forgot password?">
-                                            <color key="baseForegroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="baseForegroundColor" red="0.42172846200000003" green="0.54772764439999999" blue="0.7243927121" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </buttonConfiguration>
                                     </button>
                                 </subviews>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" red="0.86258866643721044" green="0.92650442190885496" blue="0.8626887656668355" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.97614651919999995" green="0.97178798909999997" blue="0.95831781630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="rNM-9j-DRH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="K6A-iB-2pm"/>
                             <constraint firstItem="rNM-9j-DRH" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="LyT-cs-dAd"/>
@@ -93,10 +96,45 @@
             </objects>
             <point key="canvasLocation" x="90" y="80"/>
         </scene>
+        <!--Welcome Page View Controller-->
+        <scene sceneID="4k9-6g-Ro8">
+            <objects>
+                <viewController id="Ywv-DW-PS4" customClass="WelcomePageViewController" customModule="About_me" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ujf-je-79e">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="MIa-hr-Rig">
+                                <rect key="frame" x="20" y="100" width="280" height="114.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome, username" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uc8-Uc-gx7">
+                                        <rect key="frame" x="43.5" y="0.0" width="193.5" height="26.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <color key="textColor" red="0.44584000109999999" green="0.57524520160000003" blue="0.75533241029999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="👋" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UKA-Jd-8JM">
+                                        <rect key="frame" x="117.5" y="66.5" width="45" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="JJ4-RL-F1W"/>
+                        <color key="backgroundColor" red="0.97614651919999995" green="0.97178798909999997" blue="0.95831781630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="MIa-hr-Rig" firstAttribute="leading" secondItem="JJ4-RL-F1W" secondAttribute="leading" constant="20" id="Uk9-XM-gFD"/>
+                            <constraint firstItem="MIa-hr-Rig" firstAttribute="top" secondItem="JJ4-RL-F1W" secondAttribute="top" constant="100" id="YYz-cF-gqo"/>
+                            <constraint firstItem="JJ4-RL-F1W" firstAttribute="trailing" secondItem="MIa-hr-Rig" secondAttribute="trailing" constant="20" id="qF2-Np-4rf"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="g32-ZQ-NTz"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hHg-WV-fNc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="832.5" y="78.16901408450704"/>
+        </scene>
     </scenes>
-    <resources>
-        <systemColor name="systemPinkColor">
-            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-    </resources>
 </document>
