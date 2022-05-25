@@ -12,11 +12,42 @@ class LoginViewController: UIViewController {
     @IBOutlet var usernameTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
     
+    
+    // MARK: Calling the model instance
+    
+    private let user = User.getUsers()
+    
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
+    // MARK: Navigation
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
+        
     }
-
+    
+    
+    @IBAction func signIn() {
+        if usernameTextField.text != user.login || passwordTextField.text != user.password {
+            showAlert(title: "Oops...", message: "Invalid username or password")
+        }
+    }
+    
+    @IBAction func showAlertForgotButton(_ sender: UIButton) {
+        if sender.tag == 0 {
+            showAlert(title: "Hey!", message: "Your username is \(user.login)")
+        } else {
+            showAlert(title: "Hey!", message: "Your password is \(user.password)")
+        }
+    }
+    
+    // MARK: - Alert
+    
+    private func showAlert (title: String, message: String) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let alertAction = UIAlertAction(title: "Ok", style: .default)
+        alert.addAction(alertAction)
+        present(alert, animated: true)
+    }
+    
+    
 }
 
