@@ -15,6 +15,8 @@
 		54196C0F283C344800A0A06B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54196C0D283C344800A0A06B /* LaunchScreen.storyboard */; };
 		54196C1B283C497A00A0A06B /* WelcomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54196C1A283C497A00A0A06B /* WelcomePageViewController.swift */; };
 		546BE9F1283E6B4A00DAA9A3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546BE9F0283E6B4A00DAA9A3 /* User.swift */; };
+		546BE9F3283EF87500DAA9A3 /* AboutMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546BE9F2283EF87400DAA9A3 /* AboutMeViewController.swift */; };
+		546BE9F5283EF8A000DAA9A3 /* MyHobbyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546BE9F4283EF8A000DAA9A3 /* MyHobbyViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		54196C10283C344800A0A06B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		54196C1A283C497A00A0A06B /* WelcomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePageViewController.swift; sourceTree = "<group>"; };
 		546BE9F0283E6B4A00DAA9A3 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		546BE9F2283EF87400DAA9A3 /* AboutMeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMeViewController.swift; sourceTree = "<group>"; };
+		546BE9F4283EF8A000DAA9A3 /* MyHobbyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyHobbyViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,8 @@
 			children = (
 				54196C06283C344300A0A06B /* LoginViewController.swift */,
 				54196C1A283C497A00A0A06B /* WelcomePageViewController.swift */,
+				546BE9F2283EF87400DAA9A3 /* AboutMeViewController.swift */,
+				546BE9F4283EF8A000DAA9A3 /* MyHobbyViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -188,6 +194,8 @@
 				54196C07283C344300A0A06B /* LoginViewController.swift in Sources */,
 				54196C03283C344300A0A06B /* AppDelegate.swift in Sources */,
 				54196C1B283C497A00A0A06B /* WelcomePageViewController.swift in Sources */,
+				546BE9F5283EF8A000DAA9A3 /* MyHobbyViewController.swift in Sources */,
+				546BE9F3283EF87500DAA9A3 /* AboutMeViewController.swift in Sources */,
 				54196C05283C344300A0A06B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
