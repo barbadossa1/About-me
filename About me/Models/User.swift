@@ -26,8 +26,9 @@ struct Person {
     let surname: String
     let aboutDescription: String
     let hobbyDescription: String
+    let image: String
     
     static func getPerson() -> Person {
-        Person(name: "Vadim", surname: "Kuznetsov", aboutDescription: "sdfbadfbadf", hobbyDescription: "fhjmfhj,hj,")
+        Person(name: "Vadim", surname: "Kuznetsov", aboutDescription: "ergqergqerg", hobbyDescription: "wfbfbwbw", image: "myPhoto")
     }
 }
