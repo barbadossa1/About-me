@@ -10,15 +10,13 @@ import Foundation
 struct User {
     let login: String
     let password: String
-    let person: [Person]
+    let person: Person
     
     static func getUsers() -> User {
         User(
                 login: "Vadim",
                 password: "Password",
-                person: [
-                    Person(name: "Vadim", surname: "Kuznetsov", aboutDescription: "dfvadfva", hobbyDescription: "ghndhndhndhndn")
-                ]
+                person: Person.getPerson()
         )
     }
 }
@@ -28,4 +26,8 @@ struct Person {
     let surname: String
     let aboutDescription: String
     let hobbyDescription: String
+    
+    static func getPerson() -> Person {
+        Person(name: "Vadim", surname: "Kuznetsov", aboutDescription: "sdfbadfbadf", hobbyDescription: "fhjmfhj,hj,")
+    }
 }
