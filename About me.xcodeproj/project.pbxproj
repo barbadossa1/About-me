@@ -14,6 +14,7 @@
 		54196C0C283C344800A0A06B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54196C0B283C344800A0A06B /* Assets.xcassets */; };
 		54196C0F283C344800A0A06B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54196C0D283C344800A0A06B /* LaunchScreen.storyboard */; };
 		54196C1B283C497A00A0A06B /* WelcomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54196C1A283C497A00A0A06B /* WelcomePageViewController.swift */; };
+		546BE9F1283E6B4A00DAA9A3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546BE9F0283E6B4A00DAA9A3 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		54196C0E283C344800A0A06B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		54196C10283C344800A0A06B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		54196C1A283C497A00A0A06B /* WelcomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePageViewController.swift; sourceTree = "<group>"; };
+		546BE9F0283E6B4A00DAA9A3 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				54196C17283C355B00A0A06B /* ViewControllers */,
+				546BE9EF283E6AB100DAA9A3 /* Models */,
 				54196C16283C34D600A0A06B /* Storyboards */,
 				54196C18283C36B500A0A06B /* App config */,
 				54196C19283C36D700A0A06B /* Resources */,
@@ -100,6 +103,14 @@
 				54196C0B283C344800A0A06B /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		546BE9EF283E6AB100DAA9A3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				546BE9F0283E6B4A00DAA9A3 /* User.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,6 +184,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				546BE9F1283E6B4A00DAA9A3 /* User.swift in Sources */,
 				54196C07283C344300A0A06B /* LoginViewController.swift in Sources */,
 				54196C03283C344300A0A06B /* AppDelegate.swift in Sources */,
 				54196C1B283C497A00A0A06B /* WelcomePageViewController.swift in Sources */,
