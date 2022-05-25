@@ -24,6 +24,7 @@ class LoginViewController: UIViewController {
         
     }
     
+    // MARK: - Buttons
     
     @IBAction func signIn() {
         if usernameTextField.text != user.login || passwordTextField.text != user.password {

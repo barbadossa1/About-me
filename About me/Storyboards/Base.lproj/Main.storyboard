@@ -168,6 +168,9 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Welcome" image="house" catalog="system" id="NM2-tt-YNt"/>
                     <navigationItem key="navigationItem" id="g32-ZQ-NTz"/>
+                    <connections>
+                        <outlet property="welcomeTextField" destination="uc8-Uc-gx7" id="EwB-2p-iv5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hHg-WV-fNc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
