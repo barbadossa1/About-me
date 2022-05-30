@@ -9,16 +9,16 @@ import UIKit
 
 class WelcomePageViewController: UIViewController {
     
-    
     @IBOutlet var welcomeTextField: UILabel!
     
-    var personUsername: User!
+    var userfullname: User!
     
-//    override func viewDidLoad() {
-//        super.viewDidLoad()
-//
-//        welcomeTextField.text = "Welcome \(personUsername.person.name) \(personUsername.person.surname)"
-//    }
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        welcomeTextField.text  = "Welcome \(userfullname.person.fullname)"
 
+        
+    }
 
 }

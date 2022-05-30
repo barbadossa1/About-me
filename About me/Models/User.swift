@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 struct User {
     let login: String
@@ -14,9 +15,9 @@ struct User {
     
     static func getUsers() -> User {
         User(
-                login: "Vadim",
-                password: "Password",
-                person: Person.getPerson()
+            login: "Vadim",
+            password: "Password",
+            person: Person.getPerson()
         )
     }
 }
@@ -28,7 +29,17 @@ struct Person {
     let hobbyDescription: String
     let image: String
     
+    var fullname: String {"\(name) \(surname)"}
+    
     static func getPerson() -> Person {
-        Person(name: "Vadim", surname: "Kuznetsov", aboutDescription: "ergqergqerg", hobbyDescription: "wfbfbwbw", image: "myPhoto")
+        Person(
+            name: "Vadim",
+            surname: "Kuznetsov",
+            aboutDescription: "ergqergqerg",
+            hobbyDescription: "wfbfbwbw",
+            image: "myPhoto"
+        )
     }
 }
+
+

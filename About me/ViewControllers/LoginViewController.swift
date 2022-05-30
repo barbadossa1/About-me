@@ -17,11 +17,13 @@ class LoginViewController: UIViewController {
     
     private let user = User.getUsers()
     
-
-    // MARK: Navigation
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
-        
+    // MARK: Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let welcomeVC = segue.destination as? WelcomePageViewController else {
+            return
+        }
+        welcomeVC.userfullname = user
     }
     
     // MARK: - Buttons
@@ -43,8 +45,14 @@ class LoginViewController: UIViewController {
     // MARK: - Alert
     
     private func showAlert (title: String, message: String) {
-        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let alert = UIAlertController(
+            title: title,
+            message: message,
+            preferredStyle: .alert
+        )
+        
         let alertAction = UIAlertAction(title: "Ok", style: .default)
+        
         alert.addAction(alertAction)
         present(alert, animated: true)
     }
