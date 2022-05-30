@@ -20,10 +20,19 @@ class LoginViewController: UIViewController {
     
     // MARK: Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let welcomeVC = segue.destination as? WelcomePageViewController else {
-            return
+        guard let tabBarController = segue.destination as? UITabBarController else {return}
+        guard let viewControllers = tabBarController.viewControllers else {return}
+    
+        // MARK: iterating through the viewControllers array
+        
+        for viewController in viewControllers {
+            if let welcomeVC = viewController as? WelcomePageViewController {
+                welcomeVC.userfullname = user
+                
+            } else if let navigationVC = viewController as? UINavigationController {
+                let aboutMeVC = navigationVC.topViewController as! AboutMeViewController
+            }
         }
-        welcomeVC.userfullname = user
     }
     
     // MARK: - Buttons

@@ -16,7 +16,7 @@ class WelcomePageViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        welcomeTextField.text  = "Welcome \(userfullname.person.fullname)"
+        welcomeTextField.text  = "Welcome \(user.person.userfullname)"
 
         
     }
