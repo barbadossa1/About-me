@@ -28,12 +28,14 @@ class LoginViewController: UIViewController {
         for viewController in viewControllers {
             if let welcomeVC = viewController as? WelcomePageViewController {
                 welcomeVC.userfullname = user
-                
-            } else if let navigationVC = viewController as? UINavigationController {
-                let aboutMeVC = navigationVC.topViewController as! AboutMeViewController
+            } else if let aboutMeVC = viewController as? AboutMeViewController {
+                aboutMeVC.user = user
+            } else if let myHobbyVC = viewController as? MyHobbyViewController {
+                myHobbyVC.user = user
             }
         }
     }
+}
     
     // MARK: - Buttons
     
