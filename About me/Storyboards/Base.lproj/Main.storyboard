@@ -55,7 +55,6 @@
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="logInButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c4t-Kc-9Jj"/>
-                                            <action selector="signIn" destination="BYZ-38-t0r" eventType="touchUpInside" id="BJD-jp-Bsv"/>
                                             <segue destination="svC-w2-143" kind="presentation" modalPresentationStyle="fullScreen" id="yj7-ls-5nG"/>
                                         </connections>
                                     </button>
@@ -71,7 +70,7 @@
                                             <color key="baseForegroundColor" red="0.44584000109999999" green="0.57524520160000003" blue="0.75533241029999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="showAlertForgotButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qyk-Wu-v3f"/>
+                                            <action selector="forgotButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mSm-8c-1xe"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vd8-44-qJd">
@@ -81,7 +80,7 @@
                                             <color key="baseForegroundColor" red="0.42172846200000003" green="0.54772764439999999" blue="0.7243927121" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="showAlertForgotButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zif-VN-fZc"/>
+                                            <action selector="forgotButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rk1-E8-Gxd"/>
                                         </connections>
                                     </button>
                                 </subviews>

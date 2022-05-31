@@ -46,6 +46,16 @@ class LoginViewController: UIViewController {
         }
     }
     
+    @IBAction func forgotButtons(_ sender: UIButton) {
+        if sender.tag == 0 {
+            showAlert(title: "Hey!", message: "Your login is \(user.login)")
+        } else {
+            showAlert(title: "Hey!", message: "Your password is \(user.password)")
+        }
+    }
+    
+
+    
     // MARK: - Alert
     
     private func showAlert (title: String, message: String) {
