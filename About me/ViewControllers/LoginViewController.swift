@@ -29,27 +29,20 @@ class LoginViewController: UIViewController {
             if let welcomeVC = viewController as? WelcomePageViewController {
                 welcomeVC.userfullname = user
             } else if let aboutMeVC = viewController as? AboutMeViewController {
-                aboutMeVC.user = user
+                aboutMeVC.userInfo = user
             } else if let myHobbyVC = viewController as? MyHobbyViewController {
-                myHobbyVC.user = user
+                myHobbyVC.userInfo = user
             }
         }
     }
-}
+
     
     // MARK: - Buttons
     
-    @IBAction func signIn() {
+
+    @IBAction func logInButton(_ sender: Any) {
         if usernameTextField.text != user.login || passwordTextField.text != user.password {
-            showAlert(title: "Oops...", message: "Invalid username or password")
-        }
-    }
-    
-    @IBAction func showAlertForgotButton(_ sender: UIButton) {
-        if sender.tag == 0 {
-            showAlert(title: "Hey!", message: "Your username is \(user.login)")
-        } else {
-            showAlert(title: "Hey!", message: "Your password is \(user.password)")
+            showAlert(title: "Oops!", message: "Invalid username or password")
         }
     }
     

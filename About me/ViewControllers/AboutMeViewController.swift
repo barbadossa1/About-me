@@ -8,6 +8,9 @@
 import UIKit
 
 class AboutMeViewController: UIViewController {
+    
+    
+    var userInfo: User!
 
     override func viewDidLoad() {
         super.viewDidLoad()

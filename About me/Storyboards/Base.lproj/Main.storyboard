@@ -54,6 +54,7 @@
                                             <color key="baseBackgroundColor" red="0.52715533969999995" green="0.67969137430000004" blue="0.8970826864" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </buttonConfiguration>
                                         <connections>
+                                            <action selector="logInButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c4t-Kc-9Jj"/>
                                             <action selector="signIn" destination="BYZ-38-t0r" eventType="touchUpInside" id="BJD-jp-Bsv"/>
                                             <segue destination="svC-w2-143" kind="presentation" modalPresentationStyle="fullScreen" id="yj7-ls-5nG"/>
                                         </connections>
