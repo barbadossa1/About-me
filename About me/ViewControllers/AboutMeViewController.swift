@@ -9,11 +9,16 @@ import UIKit
 
 class AboutMeViewController: UIViewController {
     
+    @IBOutlet var userInfo: UILabel!
+    @IBOutlet var userImage: UIImageView!
     
-    var userInfo: User!
+    var user: User!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        userImage.image = UIImage(named: user.person.image)
+        userInfo.text = "\(user.person.aboutDescription)"
 
     }
 

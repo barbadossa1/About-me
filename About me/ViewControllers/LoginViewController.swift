@@ -15,7 +15,7 @@ class LoginViewController: UIViewController {
     
     // MARK: Calling the model instance
     
-    private let user = User.getUsers()
+    private var user = User.getUsers()
     
     
     // MARK: Navigation
@@ -27,11 +27,10 @@ class LoginViewController: UIViewController {
         
         for viewController in viewControllers {
             if let welcomeVC = viewController as? WelcomePageViewController {
-                welcomeVC.userfullname = user
-            } else if let aboutMeVC = viewController as? AboutMeViewController {
-                aboutMeVC.userInfo = user
-            } else if let myHobbyVC = viewController as? MyHobbyViewController {
-                myHobbyVC.userInfo = user
+                welcomeVC.user = user
+            } else if let navigationVC = viewController as? UINavigationController {
+                let aboutUserVC = navigationVC.topViewController as? AboutMeViewController
+                aboutUserVC?.user = user
             }
         }
     }
