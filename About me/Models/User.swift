@@ -5,7 +5,6 @@
 //  Created by VK on 25.05.2022.
 //
 
-import Foundation
 import UIKit
 
 struct User {
@@ -27,7 +26,7 @@ struct Person {
     let surname: String
     let aboutDescription: String
     let hobbyDescription: String
-    let image: String
+    let image: [String]
     
     var fullname: String {"\(name) \(surname)"}
     
@@ -41,7 +40,7 @@ struct Person {
             hobbyDescription: """
             I continue to help companies create businesses in the field of e-commerce, but most of the time I am engaged in teaching the Swift programming language.
             """,
-            image: "myPhoto"
+            image: ["myPhoto", "swift-og 1", "XCode-icon 1"]
         )
     }
 }

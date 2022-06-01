@@ -17,7 +17,7 @@ class AboutMeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        userImage.image = UIImage(named: user.person.image)
+        userImage.image = UIImage(named: user.person.image.first ?? "")
         userInfo.text = "\(user.person.aboutDescription)"
 
     }

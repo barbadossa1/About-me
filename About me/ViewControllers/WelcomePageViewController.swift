@@ -18,5 +18,8 @@ class WelcomePageViewController: UIViewController {
         
         welcomeTextField.text = "Welcome \(user.person.fullname)"
     }
-
+    @IBAction func signOutButton() {
+        dismiss(animated: true)
+    }
+    
 }
