@@ -245,28 +245,12 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="ciS-TG-Ay0">
                                 <rect key="frame" x="20" y="194" width="374" height="375.5"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="u8o-mZ-c7w">
-                                        <rect key="frame" x="0.0" y="0.0" width="41.5" height="207"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MRp-g5-8SY">
-                                                <rect key="frame" x="0.0" y="0.0" width="41.5" height="207"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="Zzo-Aq-Xmj">
-                                        <rect key="frame" x="0.0" y="247" width="306" height="128.5"/>
-                                        <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zZc-vT-VZe">
-                                                <rect key="frame" x="0.0" y="0.0" width="128" height="128.5"/>
-                                            </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ayJ-Xb-6Xh">
-                                                <rect key="frame" x="178" y="0.0" width="128" height="128.5"/>
-                                            </imageView>
-                                        </subviews>
-                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="18" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SHP-zM-ix1">
+                                        <rect key="frame" x="0.0" y="0.0" width="41.5" height="375.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -281,9 +265,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="My hobby" id="Did-bg-SjI"/>
                     <connections>
-                        <outlet property="developImage" destination="zZc-vT-VZe" id="AKc-5r-bmY"/>
-                        <outlet property="swiftImage" destination="ayJ-Xb-6Xh" id="fDq-4T-oLz"/>
-                        <outlet property="userHobbyText" destination="MRp-g5-8SY" id="GQr-HV-HzO"/>
+                        <outlet property="userHobbyText" destination="SHP-zM-ix1" id="tXX-Je-YXM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L7d-hE-x0W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
