@@ -9,6 +9,10 @@ import UIKit
 
 class MyHobbyViewController: UIViewController {
     
+    @IBOutlet var userHobbyText: UILabel!
+    
+    @IBOutlet var developImage: UIImageView!
+    @IBOutlet var swiftImage: UIImageView!
     
     var user: User!
 

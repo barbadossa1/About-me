@@ -18,14 +18,5 @@ class WelcomePageViewController: UIViewController {
         
         welcomeTextField.text = "Welcome \(user.person.fullname)"
     }
-    
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        guard let navgationController = segue.destination as? UINavigationController else {return}
-//        guard let viewControllers = navgationController.viewControllers else {return}
-//
-//        if viewController in viewControllers
-//
-//
-//    }
 
 }
